@@ -1,0 +1,7 @@
+The following CSS code snippet demonstrates an issue related to unexpected behavior when using the `:nth-child` pseudo-class with a formula that produces a negative index.  In this case, the formula `-n + 1` will return negative values for `n > 1`, leading to unexpected results, rather than correctly selecting elements. 
+
+```css
+.container div:nth-child(-n + 1){
+  color: blue;
+}
+```
