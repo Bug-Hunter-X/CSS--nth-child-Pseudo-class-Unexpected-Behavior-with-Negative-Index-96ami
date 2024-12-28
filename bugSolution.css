@@ -1,0 +1,9 @@
+The provided CSS code snippet fixes the issue by using a more robust and predictable selector, removing the reliance on a negative index. This ensures consistent results across browsers.  While the specific solution depends on the intended selection, an alternative approach might involve using other CSS selectors, such as `:first-child` for the first element only or a more appropriate `:nth-child` formula that consistently produces non-negative values.  For example, if the intent is to style only the first element, using `:first-child` is clearer and more reliable.
+
+```css
+.container div:first-child {
+  color: blue;
+}
+```
+
+Alternatively, you might need to use a different selector or approach to achieve the desired style for elements beyond the first one.
